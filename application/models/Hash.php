@@ -6,7 +6,7 @@
  */
 class Hash extends Model
 {
-	public $hash;
+    public $hash;
 
     /**
      * Get url from db by its hash
@@ -33,28 +33,28 @@ class Hash extends Model
      */  
     public function validate()
     {
- 		if (empty($this->hash)) 
+        if (empty($this->hash))
         {
             $this->error = "No hash!";
         }
 
         if (empty($this->error) && $this->validateHash($this->hash) == false)
         {
-        	$this->error = "Invalid hash!";
+            $this->error = "Invalid hash!";
         }
 
         if (empty($this->error))
         {
-        	$url = $this->redis->get("urls:" . $this->hash);
-        	if ($url == null) 
-	        {
-	           $this->error = "Url does not exist.";
-	        }
+            $url = $this->redis->get("urls:" . $this->hash);
+            if ($url == null)
+            {
+               $this->error = "Url does not exist.";
+            }
         } 
 
         return empty($this->error);
-   	}
-    
+    }
+
     /**
      * Check if hash in valid format
      * 

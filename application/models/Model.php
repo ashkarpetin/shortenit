@@ -6,20 +6,20 @@
  */
 abstract class Model
 {
-	public $error;
+    public $error;
 
-	/**
+    /**
      * @var object reference to a redis object
      */
-	protected $redis;
+    protected $redis;
 
-	/**
+    /**
      * Constructor
      * 
      * Sets the class variable $redis with a reference to a redis object     
      */
- 	public function __construct() 
- 	{
+    public function __construct()
+    {
         $this->redis = Db::instance();
     }
 

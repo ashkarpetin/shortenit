@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title> Shorten It! </title>		
-		<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
-		<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css">
+    <head>
+        <title> Shorten It! </title>
+        <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
+        <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css">
         <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
         <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"></script>
         <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
@@ -16,22 +16,22 @@
                 letter-spacing: -1px;
                 line-height: 1;
             }
-            
+
             a:link {color:#3A87AD;}     
             a:visited {color:#3A87AD;}  
             a:hover {color:#3A87AD;}  
             a:active {color:#3A87AD;} 
-            
+
             .label 
             {
                 padding: 3px 6px 5px;
                 font-size: 12px;
             }        
         </style>
-	</head>
-	<body>
-		<div class="container">
-			<div class="row" style="padding-top:20px; padding-bottom:8px;">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" style="padding-top:20px; padding-bottom:8px;">
             <div class="span12">
                 <a href="index.php"><h1 class="jumbotron">Shorten It.<span id="beta" class="label label-info" style="position:absolute; top:32px;"> alpha </span></h1></a>
             </div>
@@ -107,7 +107,7 @@
                                             $("#url").val("");
                                         }
                                     }
-                                });                                      
+                                });
                             }
                         }
 
@@ -138,6 +138,6 @@
                 <? endif ?>
             </div>
         </div>
-		</div>
-	</body>
+        </div>
+    </body>
 </html>	

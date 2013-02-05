@@ -1,12 +1,12 @@
 {
-	"name": "shortenit",
+    "name": "shortenit",
     "version": "0.1.0",
 
-    "require": {    
-    	"predis/predis": "dev-master"
+    "require": {
+        "predis/predis": "dev-master"
     },
-		
-	"config": {
+
+    "config": {
         "vendor-dir": "application/vendor"
     }
 }

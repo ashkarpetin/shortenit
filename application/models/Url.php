@@ -6,7 +6,7 @@
  */
 
 class Url extends Model
-{	
+{
     public $url;
 
     /**
@@ -20,7 +20,7 @@ class Url extends Model
      * @return string the url hash
      */    
     public function toHash()
-    {    						       
+    {
         require_once (dirname(__FILE__) . '/../PseudoCrypt.php');
 
         $counter = $this->redis->incr('counter:id');
@@ -56,15 +56,15 @@ class Url extends Model
         }
         return empty($this->error);
     }
-    
+
     /**
      * Check if the URL in a valid format
      * 
      * @param string $url the long URL
      * @return boolean whether URL is a valid format
      */
-   	private function validateUrl($url)
-	{
+    private function validateUrl($url)
+    {
         return filter_var($url, FILTER_VALIDATE_URL, FILTER_FLAG_HOST_REQUIRED);
     }
 
