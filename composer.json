@@ -1,0 +1,12 @@
+{
+	"name": "shortenit",
+    "version": "0.1.0",
+
+    "require": {    
+    	"predis/predis": "dev-master"
+    },
+		
+	"config": {
+        "vendor-dir": "application/vendor"
+    }
+}

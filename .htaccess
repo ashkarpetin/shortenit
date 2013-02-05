@@ -1,0 +1,13 @@
+AddDefaultCharset Off
+<IfModule dir_module>
+	DirectoryIndex index.php
+</IfModule>
+
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI}  !^/index.php
+#RewriteRule ^(.*)$ /index.php?h=$1   [L]
+RewriteRule ^([^/\.]+)/?$ index.php?h=$1 [L]
