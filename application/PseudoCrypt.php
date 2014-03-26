@@ -38,3 +38,9 @@ class PseudoCrypt {
     }
 
 }
+
+/**
+ * example
+ */
+$nRand = rand(1, 6000000000);
+echo $sHashCode = PseudoCrypt::udihash($nRand);
